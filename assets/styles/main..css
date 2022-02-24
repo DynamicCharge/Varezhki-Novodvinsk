@@ -1403,6 +1403,8 @@ body {
     display: flex; } }
 
 @media screen and (max-width: 1040px) {
+  .main {
+    background-image: url(../../assets/img/masters-bg..png); }
   .title {
     padding-top: 0;
     display: flex;
@@ -1438,6 +1440,8 @@ body {
     .title .mobile__title {
       display: block;
       padding: 0 15%; }
+    .title .mobile__title__heading {
+      margin-bottom: 37px; }
   .mission {
     padding-top: 0; }
   .title .container:not(:last-child) {
@@ -1447,11 +1451,120 @@ body {
 @media screen and (max-width: 850px) {
   .mission .mission__wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: 'a' 'b' 'd' 'c'; }
+    grid-template-areas: 'b' 'a' 'c' 'd'; }
   .mission .mission__wrapper__item:nth-child(2) {
     height: 253px;
     grid-area: b; }
   .mission .mission__wrapper__item:nth-child(3) {
     height: 253px;
-    grid-area: c; } }
+    grid-area: c; }
+  .types .types__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'e' 'a' 'b' 'c' 'd';
+    background-image: url(../../assets/img/masters-bg..png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px cover; }
+  .types .types__wrapper__item__text-contain {
+    background-image: none !important; }
+  .types .types__wrapper__item__text-contain__wrapper {
+    width: 100%;
+    height: max-content;
+    padding: 0; }
+  .types .types__wrapper__item__text-contain__wrapper__heading {
+    background-image: url(../../assets/img/type-bg5..png);
+    padding: 100px 30px;
+    color: #fff;
+    text-align: center; }
+  .types .types__wrapper__item__text-contain__wrapper__desc {
+    padding: 30px; }
+  .types .types__wrapper__item__container:nth-child(odd) {
+    border: 1px solid #cab282; }
+  .types .types__wrapper__item__container {
+    background-color: transparent; }
+  .types .types__wrapper__item {
+    background-image: none !important;
+    height: max-content; }
+    .types .types__wrapper__item:not(:last-child) {
+      margin-bottom: 40px; }
+  .types .type__img:last-child {
+    display: none; }
+  .catalog {
+    display: none; }
+  .masters {
+    padding-top: 137px; }
+    .masters .masters__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'b' 'a'; }
+    .masters .masters__wrapper__img-container {
+      grid-area: a; }
+    .masters .masters__wrapper__text-container {
+      grid-area: b; }
+    .masters .masters__wrapper:last-child {
+      margin-top: 0; }
+  .news {
+    padding-top: 120px; }
+    .news .news__slider {
+      width: 100vw; }
+  .welcome .welcome__wrap {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'b' 'a'; }
+  .welcome .welcome__img-wrapper {
+    grid-area: b;
+    margin-bottom: 27px; }
+  .welcome .welcome__img-wrapper__img {
+    width: 100%; }
+  .welcome .welcome__text-wrapper__heading {
+    text-align: center; }
+  .welcome .welcome__text-wrapper__desc {
+    text-align: center; }
+  .welcome .welcome__text-wrapper__container {
+    justify-content: center; }
+  .footer {
+    padding: 89px 10%; }
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center !important; }
+  .footer .footer__wrapper__item {
+    justify-content: center;
+    align-items: center; }
+  .footer .footer__wrapper__item:nth-child(3) {
+    align-self: initial; }
+  .footer .footer__wrapper__item:not(:last-child) {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 520px) {
+  .types .types__wrapper__item__text-contain__wrapper__heading {
+    padding: 100px 10%; }
+  .types .types__wrapper__item__text-contain__wrapper__desc {
+    padding: 30px 10%; }
+  .page__text-header {
+    font-size: 32px;
+    line-height: 39px; }
+  .page__text-desc {
+    font-size: 16px;
+    line-height: 20px; }
+  .page__section__header {
+    font-size: 60px; }
+  .page__section__header::after {
+    margin-top: 10px; }
+  .types {
+    padding-top: 0; }
+  .masters .masters__wrap {
+    box-shadow: none; }
+  .masters__wrapper__text-container {
+    padding-top: 0 !important; }
+  .news .news__slider__item {
+    margin-right: 0;
+    width: 99vw; }
+  .news__slider__item__text-container {
+    padding: 0 10%; }
+  .welcome .welcome__img-wrapper {
+    width: 100vw; }
+  .welcome {
+    padding-top: 120px; }
+  .welcome__text-wrapper {
+    width: 100vw; }
+  .welcome .welcome__text-wrapper__container__item {
+    font-size: 16px; } }
 
