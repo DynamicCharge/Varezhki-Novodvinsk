@@ -835,7 +835,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(100px);
+  opacity: 0; }
   .page__section__header::after {
     content: '';
     display: block;
@@ -961,6 +964,9 @@ body {
     top: 0;
     left: auto;
     right: auto; }
+    .title .image-container img {
+      opacity: 0;
+      transition: 0.6s ease-in-out; }
   .title .logo-container {
     display: flex;
     justify-content: center;
@@ -980,9 +986,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .title .title__logo {
+    transition: all 0.4s ease-in-out;
+    opacity: 0; }
   .title .title__heading {
     margin-bottom: 107px; }
   .title .title-slider {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
     height: 875px;
     width: 100%; }
     .title .title-slider .title__wrapper__slide {
@@ -1015,6 +1026,8 @@ body {
         margin-bottom: 34px; }
 
 .mission {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
   position: relative;
   background-image: url(../../assets/img/mission-bg..png);
   background-position: top -500px center;
@@ -1042,10 +1055,16 @@ body {
   background-color: #fefefe; }
   .types .type__img {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-200px); }
     .types .type__img:last-child {
       transform: scaleY(-1); }
   .types .types__wrapper {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.3s ease-in-out;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'a b c' 'd e e'; }
@@ -1240,6 +1259,9 @@ body {
       margin-top: 15px;
       column-gap: 15px; }
   .masters .masters__wrapper__img-container {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
     height: 438px;
     background-image: url(../../assets/img/masters1..png);
     background-image: url(../../assets/img/masters2..png);
@@ -1262,10 +1284,15 @@ body {
       text-align-last: left;
       color: #000; }
   .masters .masters__wrapper__text-container {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
     padding: 80px 87px; }
   .masters .masters__wrapper__text-container__heading {
     margin-bottom: 24px; }
   .masters .masters__wrapper__item {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
     height: 438px;
     padding: 34px 24px;
     display: flex;
@@ -1509,6 +1536,37 @@ body {
     text-align: center;
     max-width: 984px;
     margin: 0 auto; }
+  .catalog-page .catalog__filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 41px; }
+  .catalog-page .catalog__filter__label {
+    font-family: 'AlaRuss';
+    font-size: 29px;
+    color: #5f5d5b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .catalog-page .catalog__filter__label:not(:last-child) {
+      margin-right: 20px; }
+    .catalog-page .catalog__filter__label:not(:last-child)::after {
+      content: '';
+      width: 11px;
+      height: 11px;
+      border: 1px solid #cfb583;
+      background-color: #f7efe2;
+      display: block;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-left: 20px; }
+    .catalog-page .catalog__filter__label .catalog__filter__check {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0; }
   .catalog-page .catalog__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 310px);
@@ -1601,6 +1659,31 @@ body {
     line-height: 20px;
     color: #5f5d5b;
     text-align: center; }
+
+._label-active {
+  color: #d4b895; }
+
+.form-order__wrapper {
+  max-width: 1180px;
+  color: #5f5d5b;
+  display: none; }
+
+.form-order {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.form-order__header {
+  font-size: 40px;
+  line-height: 50px;
+  color: #d4b895;
+  margin-bottom: 58px; }
+
+.form-order__name {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 70px; }
 
 .catalog-item {
   background-color: #fafafa;
@@ -1738,6 +1821,10 @@ body {
     width: 197px;
     align-self: center;
     margin-top: 134px; }
+
+._active {
+  opacity: 1 !important;
+  transform: translateY(0px) !important; }
 
 @media screen and (max-width: 1335px) {
   .header .nav {

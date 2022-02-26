@@ -14,7 +14,7 @@
     
     <header class="header">
         <div class="header__logo-wrapper">
-            <a href="" class="logo"><img src="assets/img/logo..png" alt=""></a>
+            <a href="./" class="logo"><img src="assets/img/logo..png" alt=""></a>
             <!-- <a href="#" class="alt-logo">г. Новодвинск, ул. Ломоносова, 3, к.1</a> -->
         </div>
         <nav class="nav">
@@ -119,7 +119,7 @@
                             Данная цена ориентировочная.
                             Точную стоимость вам подскажет наш мастер по телефону
                         </p>
-                        <a href="" class="catalog-item__body__info__link">Заказать</a>
+                        <a data-fancybox="" href="#form-oreder-popup" class="catalog-item__body__info__link">Заказать</a>
                     </div>
                 </div>
                 <div class="catalog-item__gallery">
@@ -139,6 +139,49 @@
                 <a href="./catalog.html" class="post__link catalog-item-link">В каталог</a>
             </div>
         </section>
+
+        <div class="form-order__wrapper" data-fancybox>
+            <form action="" class="form-order" id="form-oreder-popup">
+                <h3 class="form-order__header">Бланк заказа<br> индивидуального изделия</h3>
+                <span class="form-order__name">Наименование изделия: Варежки - Орнамент №1</span>
+                <div class="form-order__filters">
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        На плодородие
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        На удачу
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        На продление рода
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        На здоровья
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        Мужчина
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        Женщина
+                    </label>
+                    <label class="form-order__filters__label">
+                        <input type="checkbox" class="form-order__filters__label__check">
+                        Ребенок
+                    </label>
+                </div>
+                <div class="form-order__wrapper">
+                    <input type="text" class="form-order__input" name="name">
+                    <input type="text" class="form-order__input" name="phone">
+                    <input type="text" class="form-order__input" name="email">
+                </div>
+                <input type="submit" class="form-order__submit" value="Отправить">
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
