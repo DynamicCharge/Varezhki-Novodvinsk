@@ -350,6 +350,12 @@
   font-style: normal;
   font-weight: 600; }
 
+@font-face {
+  font-family: 'HarmoniaSansProSyr';
+  src: url(../../assets/img/HarmoniaSansProCyr-Light..ttf);
+  font-style: normal;
+  font-weight: light; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -751,7 +757,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
-  top: 66px;
+  top: 0;
   transform: translateY(-1000px);
   opacity: 0;
   transition: opacity 0.3s ease-in-out; }
@@ -762,12 +768,13 @@ body {
 
 .mobile__menu {
   width: 100%;
-  background-color: #fff;
-  padding: 25px 0;
+  background-color: #000;
+  padding: 158px 0;
   z-index: 110; }
   .mobile__menu .mobile__nav__list {
     margin: 0 auto;
-    width: max-content; }
+    width: max-content;
+    color: white; }
     .mobile__menu .mobile__nav__list .nav__list__item:not(:last-child) {
       margin-bottom: 15px; }
   .mobile__menu .mobile__menu__close {
@@ -777,7 +784,23 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #fff; }
+  .mobile__menu .link--herse {
+    font-family: freight-display-pro, serif;
+    font-size: 1.375rem;
+    font-weight: bold; }
+  .mobile__menu .link__graphic--arc {
+    top: 73%;
+    left: -23%; }
+  .mobile__menu .link__graphic--arc path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1); }
+  .mobile__menu .link:hover .link__graphic--arc path {
+    stroke-dashoffset: 0;
+    transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+    transition-duration: 0.3s; }
   .mobile__menu .nav__list__item {
     font-family: 'CenturyGothic';
     font-weight: normal;
@@ -785,6 +808,8 @@ body {
     text-transform: uppercase;
     font-size: 17.33px;
     line-height: 27.81px; }
+    .mobile__menu .nav__list__item .nav__list__link {
+      color: white; }
     .mobile__menu .nav__list__item:hover .nav__list__link {
       color: #9d8d73; }
     .mobile__menu .nav__list__item:hover::after {
@@ -804,6 +829,12 @@ body {
     color: #171728;
     white-space: nowrap; }
 
+.bg-img {
+  position: absolute;
+  bottom: 100px;
+  z-index: 99;
+  width: 100%; }
+
 .page__text-header {
   font-family: 'CenturyGothic';
   font-style: normal;
@@ -816,7 +847,7 @@ body {
   opacity: 0; }
 
 .page__text-desc {
-  font-family: 'CenturyGothic';
+  font-family: 'HarmoniaSansProSyr';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1422,6 +1453,8 @@ body {
     object-fit: cover; }
 
 .footer {
+  position: relative;
+  z-index: 101;
   padding: 246px 150px 95px; }
   .footer .footer__wrapper {
     display: flex;
@@ -1441,11 +1474,13 @@ body {
   .footer .footer__logo {
     margin-bottom: 45px; }
   .footer .footer__link {
+    font-family: 'HarmoniaSansProSyr';
     font-size: 15px;
     line-height: 19px;
     color: #bdbdbd;
     text-decoration: underline; }
   .footer .footer__wrapper__item__text {
+    font-family: 'HarmoniaSansProSyr';
     font-size: 25px;
     line-height: 25px;
     color: #727272;
@@ -1463,8 +1498,7 @@ body {
     width: 100%; }
 
 .post {
-  padding-top: 114px;
-  background-color: #fafafa; }
+  padding-top: 114px; }
   .post .container {
     max-width: 1074px;
     display: flex;
@@ -1526,9 +1560,6 @@ body {
     display: block;
     background-image: url(../../assets/img/go-back..png);
     margin-right: 10px; }
-
-.post-page .footer {
-  background-color: #fafafa; }
 
 .catalog-page {
   background-color: #fafafa;
@@ -1609,7 +1640,10 @@ body {
     .catalog-page .catalog__wrapper__item__img-box img {
       width: 200px;
       height: 200px;
-      object-fit: contain; }
+      object-fit: contain;
+      transition: transform 0.9s ease-in-out; }
+    .catalog-page .catalog__wrapper__item__img-box:hover img {
+      transform: scale(1.3); }
   .catalog-page .catalog__wrapper__item__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1639,7 +1673,9 @@ body {
     grid-template-areas: 'a b c' 'd e e';
     row-gap: 91px;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    z-index: 99; }
   .catalog-adv .catalog-adv__wrapper__item {
     border: 1px solid #cfb583;
     background-color: #fff;
@@ -1995,6 +2031,8 @@ body {
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 520px) {
+  .section__aside-img {
+    width: 10% !important; }
   .post .post__wrapper__text {
     padding: 0 10%;
     text-align: center; }
