@@ -19,12 +19,12 @@
         </div>
         <nav class="nav">
             <ul class="nav__list">
+                <li class="nav__list__item"><a href="#" class="nav__list__link">На главную</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">О музее</a></li>
                 <li class="nav__list__item"><a href="./catalog.html" class="nav__list__link">Каталог</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">Миссия</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">Мастера</a></li>
                 <li class="nav__list__item"><a href="./news.html" class="nav__list__link">Новости</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link">Контакты</a></li>
             </ul>
         </nav>
         <div class="header__socials-wrapper">
@@ -46,12 +46,12 @@
         <div class="mobile__menu">
             <button class="mobile__menu__close">x</button>
             <ul class="mobile__nav__list">
+                <li class="nav__list__item"><a href="./" class="nav__list__link">На главную</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">О музее</a></li>
                 <li class="nav__list__item"><a href="./catalog.html" class="nav__list__link">Каталог</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">Миссия</a></li>
                 <li class="nav__list__item"><a href="#" class="nav__list__link">Мастера</a></li>
                 <li class="nav__list__item"><a href="./news.html" class="nav__list__link">Новости</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link">Контакты</a></li>
             </ul>
         </div>
     </div>
@@ -147,38 +147,38 @@
                 <span class="form-order__name">Наименование изделия: Варежки - Орнамент №1</span>
                 <div class="form-order__filters">
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        На плодородие
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox1">
+                        <label for="custom-checkbox1">На плодородие</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        На удачу
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox2">
+                        <label for="custom-checkbox2">На удачу</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        На продление рода
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox3">
+                        <label for="custom-checkbox3">На продление рода</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        На здоровья
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox4">
+                        <label for="custom-checkbox4">На здоровья</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        Мужчина
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox5">
+                        <label for="custom-checkbox5">Мужчина</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        Женщина
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox6">
+                        <label for="custom-checkbox6">Женщина</label>
                     </label>
                     <label class="form-order__filters__label">
-                        <input type="checkbox" class="form-order__filters__label__check">
-                        Ребенок
+                        <input type="checkbox" class="form-order__filters__label__check" id="custom-checkbox7">
+                        <label for="custom-checkbox7">Ребенок</label>
                     </label>
                 </div>
-                <div class="form-order__wrapper">
-                    <input type="text" class="form-order__input" name="name">
-                    <input type="text" class="form-order__input" name="phone">
-                    <input type="text" class="form-order__input" name="email">
+                <div class="form-order__container">
+                    <input type="text" class="form-order__input" placeholder="Ваше имя" name="name">
+                    <input type="text" class="form-order__input" placeholder="Номер телефона" name="phone">
+                    <input type="text" class="form-order__input" placeholder="Ваш e-mail" name="email">
                 </div>
                 <input type="submit" class="form-order__submit" value="Отправить">
             </form>
