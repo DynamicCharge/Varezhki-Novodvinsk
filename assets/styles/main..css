@@ -820,7 +820,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  transform: translateY(-1000px);
+  transform: translateY(-1300px);
   opacity: 0;
   transition: opacity 0.3s ease-in-out; }
 
@@ -2116,6 +2116,9 @@ height: 100vh; }
     padding-bottom: 47px; } }
 
 @media screen and (max-width: 850px) {
+  .catalog-adv .catalog-adv__wrapper__item {
+    margin: 0 auto;
+  }
   .catalog-adv .catalog-adv__wrapper {
     grid-template-columns: 1fr;
     grid-template-areas: 'e'
