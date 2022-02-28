@@ -2217,6 +2217,9 @@ height: 100vh; }
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 520px) {
+  .catalog-page .catalog__wrapper {
+    justify-content: center;
+  }
   .catalog-item .catalog-item__body {
     margin: 0 auto;
     width: 300px;
