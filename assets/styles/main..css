@@ -2104,6 +2104,9 @@ height: 100vh; }
     display: flex; } }
 
 @media screen and (max-width: 1040px) {
+  .title .title-slider .title__wrapper__bg-img {
+    position: static;
+  }
   .main {
     background-image: url(../../assets/img/masters-bg..png); }
   .title {
