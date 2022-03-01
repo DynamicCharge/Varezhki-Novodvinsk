@@ -1440,7 +1440,12 @@ height: 100vh; }
   box-sizing: border-box; }
   .news__slider__item__img-container img {
     width: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+   }
+    .news__slider__item__img-container img:hover {
+      transform: scale(1.1);
+    }
 
 .news__slider__item__text-container {
   text-align: left;
