@@ -2088,7 +2088,7 @@ height: 100vh; }
   transition: 1s ease-in-out; }
 
 .good-page .footer {
-  background-color: rgb(248, 248, 248);
+  background-color: #fafafa;
 }
 @media screen and (max-width: 1335px) {
   .header .nav {
