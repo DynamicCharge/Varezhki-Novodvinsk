@@ -726,7 +726,8 @@ body {
   top: 0;
   left: 0;
   border-bottom: 1px solid #cfb583;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+z-index: 1000; }
 
 .mobile__title {
   display: none; }
