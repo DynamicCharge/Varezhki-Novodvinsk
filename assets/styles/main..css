@@ -718,7 +718,7 @@ body {
   overflow-X: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .header-fixed {
@@ -1254,7 +1254,8 @@ height: 100vh; }
     padding: 23px 24px;
     box-sizing: border-box; }
     .catalog .catalog__slider .slick-list {
-      overflow: visible; }
+      overflow: visible;
+     }
   .catalog .catalog__slider__item {
     background-color: #fff;
     border: 1px solid #cfb583;
@@ -1468,7 +1469,8 @@ height: 100vh; }
   .news-page .section__aside-img {
     object-fit: cover;
     position: absolute;
-    overflow: hidden; }
+    overflow: hidden;
+   }
 
 .news-page__title {
   margin-bottom: 74px; }
