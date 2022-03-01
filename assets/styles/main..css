@@ -881,8 +881,8 @@ height: 100vh; }
     .mobile__menu .nav__list__item:after {
       content: '';
       width: 0;
-      height: 3px;
-      background-color: #d5bf9c;
+      height: 2px;
+      background-color: #000;
       display: block;
       opacity: 0;
       transition: width 0.2s ease-in, opacity 0.3s ease-in; }
@@ -1007,15 +1007,16 @@ height: 100vh; }
     .header .nav__list__item:not(:last-child) {
       margin-right: 45px; }
     .header .nav__list__item:hover .nav__list__link {
-      color: #9d8d73; }
+      /* color: #9d8d73; */
+     }
     .header .nav__list__item:hover::after {
       opacity: 1;
       width: 100%; }
     .header .nav__list__item:after {
       content: '';
       width: 0;
-      height: 3px;
-      background-color: #d5bf9c;
+      height: 1px;
+      background-color: #000;
       display: block;
       opacity: 0;
       transition: width 0.2s ease-in, opacity 0.3s ease-in; }
