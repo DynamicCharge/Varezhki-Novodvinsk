@@ -727,7 +727,7 @@ body {
   left: 0;
   border-bottom: 1px solid #cfb583;
   transition: all 0.3s;
-z-index: 1000; }
+}
 
 .mobile__title {
   display: none; }
@@ -992,7 +992,7 @@ height: 100vh; }
   align-items: center;
   padding: 12px 25px;
   background-color: #fff;
-  z-index: 100; }
+  z-index: 200; }
   .header .header__logo-wrapper .logo {
     display: none;
     max-width: 119px;
@@ -1657,7 +1657,6 @@ height: 100vh; }
     margin-right: 10px; }
 
 .catalog-page {
-  background-color: #fafafa;
   padding-top: 94px; }
   .catalog-page .catalog__title {
     margin-bottom: 71px; }
@@ -1769,8 +1768,10 @@ height: 100vh; }
       background-color: #5e6066; }
 
 .catalog-adv {
-  background-color: #fafafa;
-  padding-top: 195px; }
+  padding-top: 195px;
+  position: relative;
+  z-index: 102;
+ }
   .catalog-adv .catalog-adv__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 249px);
