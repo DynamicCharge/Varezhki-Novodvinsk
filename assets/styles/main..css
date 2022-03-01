@@ -715,7 +715,11 @@ table {
 body {
   color: #fff;
   position: relative;
-  overflow-X: hidden; }
+  overflow-X: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .header-fixed {
   position: sticky !important;
@@ -970,7 +974,17 @@ height: 100vh; }
     right: 0;
     transform: scale(-1); }
 
+  main {
+    flex: 1 0 auto;
+  }
+  footer {
+    flex: 0 0 auto;
+  }
+ .news-page .section__aside-img {
+  top: 0;
+ } 
 .header {
+  flex: 0 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
